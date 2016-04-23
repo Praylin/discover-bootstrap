@@ -1,0 +1,67 @@
+.container {
+	border-style: ridge;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #E0E0E0 ;
+}
+
+#sect {
+	display: flex;
+	flex-direction: row;
+}
+
+.column  {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 10px;
+}
+
+body {
+	padding: 40px;
+}
+
+.btn + .tooltip > .tooltip-inner {
+      color: #111111; 
+      border-style: ridge; 
+      border-radius: 10px;
+      padding: 0px;
+      font-size: 13px;
+  }
+
+.btn + .tooltip >.tooltip-inner th {
+	background-color: #E0E0E0;
+	padding: 5px;
+}
+
+.btn + .tooltip >.tooltip-inner td {
+	background-color: #ffffff;
+}
+
+@media all and (max-width: 768px){
+	
+	#sect {
+	display: flex;
+	flex-direction: column;
+	}
+	.column {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+	#sect {
+	display: flex;
+	flex-direction: column;
+	}
+	.column {
+		display: flex;
+		flex-direction: row;
+	}
+	.row {
+		padding: 20px;
+		margin-right: 10px;
+	}
+}

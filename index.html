@@ -1,0 +1,146 @@
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <title>Bootstrap Case</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" type="text/css" href="styles.css">
+		  <link rel="stylesheet" type="text/css" href="styles.css" media="screen and (max-width: 768px)">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</head>
+		<body>
+		<header>
+<!--Navigation bar-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Acme, inc.</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#">Home</a></li>
+		      <li><a href="#">About</a></li>
+		      <li><a href="#">Contact</a></li>
+		      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="#">Page 1-1</a></li>
+		          <li><a href="#">Page 1-2</a></li>
+		          <li><a href="#">Page 1-3</a></li>
+		        </ul>
+		      </li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#">Praylin Diana</a></li>
+		      <li><a href="#">Log out</a></li>
+		    </ul>
+		  </div>
+		</nav>
+<!--Section content-->		  
+		<div class="container">
+		  <h3>Innovation at its core</h3>
+		  <p>The navbar collapses into its vertical mobile view when the viewport is narrower than @grid-float-breakpoint, and expands into its horizontal non-mobile view when the viewport is at least @grid-float-breakpoint in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is 768px (the smallest "small" or "tablet" screen).</p>
+
+<!-- CTA button -->
+
+			<a class="btn btn-primary" href="#" data-toggle="tooltip" rel="tooltip"data-placement="right" data-html="true" data-original-title="<table><tr><th>What's behind that link</th></tr><tr><td><br></td></tr><tr><td>Tons of information about Acme,inc. Click now, You won't be disappointed!</td></tr></table>">Learn more about Acme,inc. >></a>
+
+			<script>
+				$(document).ready(function(){
+    				$('[data-toggle="tooltip"]').tooltip();
+				});
+			</script>
+
+		</div>
+		</header>
+
+		<section id="sect">
+			<div class="column">
+				<div class = "row">
+					<h4>Heading</h4>
+					<label for="input-1" class="control-label">Rate This</label>
+					<input id="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+					<script>
+						$(document).on('ready', function(){
+    					$('#input-5').rating({clearCaption: 'No stars yet'});
+						});
+					</script>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec sed odio dui. Donec sed odio dui. </p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+				<div class = "row">
+					<h4>Heading</h4>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+			</div>
+			<div class="column">
+				<div class = "row">
+					<h4>Heading</h4>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+				<div class = "row">
+					<h4>Heading</h4>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+			</div>
+			<div class="column">
+				<div class = "row">
+					<h4>Heading</h4>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+				<div class = "row">
+					<h4>Heading</h4>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<a class="btn btn-default" href = '#'>View details >></a>
+				</div>
+			</div>
+		</section>
+		<footer>
+<!--Accordion-->
+			<h3>FAQ</h3>
+			<div class="panel-group" id="accordion">
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Question #1</a>
+	        </h4>
+	      </div>
+	      <div id="collapse1" class="panel-collapse collapse in">
+	        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	      </div>
+	    </div>
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Question #2</a>
+	        </h4>
+	      </div>
+	      <div id="collapse2" class="panel-collapse collapse">
+	        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+		      </div>
+	    </div>
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+	        <h4 class="panel-title">
+	          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Question #3</a>
+	        </h4>
+	      </div>
+	      <div id="collapse3" class="panel-collapse collapse">
+	        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	      </div>
+	    </div>
+	  </div> 
+
+		</footer>
+		</body>
+		</html>
