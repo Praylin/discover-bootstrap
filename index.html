@@ -63,10 +63,12 @@
 					<h4>Heading</h4>
 <!--Bootstrap star rating-->
 					<label for="input-1" class="control-label"></label>
-					<input id="input-1" class="rating-loading" data-size="xs">
+					<input id="input-1" value="3" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-1').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-1').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec sed odio dui. Donec sed odio dui. </p>
@@ -78,7 +80,9 @@
 					<input id="input-2" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-2').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-2').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
@@ -92,7 +96,9 @@
 					<input id="input-3" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-3').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-3').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
@@ -104,7 +110,9 @@
 					<input id="input-4" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-4').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-4').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
@@ -118,7 +126,9 @@
 					<input id="input-5" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-5').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-5').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
@@ -130,7 +140,9 @@
 					<input id="input-6" class="rating-loading" data-size="xs">
 					<script>
 						$(document).on('ready', function(){
-    						$('#input-6').rating({min: 0, max: 3, step: 0.5, stars: 3});
+    						$('#input-6').rating({min: 0, max: 3, step: 0.5, stars: 3}).on("rating.change", function(event, value){
+    							alert("New value is " + value);
+    							 });
 						});
 					</script>
 					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
